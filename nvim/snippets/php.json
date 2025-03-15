@@ -1,0 +1,8 @@
+{
+  "carbon field": {
+    "scope":"php",
+    "prefix": "cb",
+    "body": ["<?= carbon_get_post_meta(get_the_ID(), '$1'); ?>$2"],
+    "description": "Carbon field from post meta"
+  },
+}

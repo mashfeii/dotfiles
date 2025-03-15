@@ -1,0 +1,20 @@
+{
+  "JS Click": {
+    "scope": "javascript,typescript",
+    "prefix": "click",
+    "body": ["${1:document}.addEventListener(\"click\", function (e) {\n\t$2\n});"],
+    "description": "document.querySelectorAll"
+  },
+  "document.querySelector": {
+    "scope": "javascript,typescript",
+    "prefix": "dq",
+    "body": ["const ${1:var} = document.querySelector('.$2');"],
+    "description": "document.querySelector"
+  },
+  "document.querySelectorAll": {
+    "scope": "javascript,typescript",
+    "prefix": "dqa",
+    "body": ["const ${1:var} = document.querySelectorAll('.$2');"],
+    "description": "document.querySelectorAll"
+  },
+}

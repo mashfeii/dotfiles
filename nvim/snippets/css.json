@@ -1,0 +1,85 @@
+{
+  "Внешниe": {
+    "prefix": "mm",
+    "body": ["margin: rem($1) rem($2) rem($3) rem($4);"]
+  },
+  "Внешний верхний": {
+    "prefix": "mmt",
+    "body": ["margin: rem($1) 0 0 0;"]
+  },
+  "Внешний нижний": {
+    "prefix": "mmb",
+    "body": ["margin: 0 0 rem($1) 0;"]
+  },
+  "Внешний правый": {
+    "prefix": "mmr",
+    "body": ["margin: 0 rem($1) 0 0;"]
+  },
+  "Внешний левый": {
+    "prefix": "mml",
+    "body": ["margin: 0 0 0 rem($1);"]
+  },
+  "Внутренние": {
+    "prefix": "pp",
+    "body": ["padding: rem($1) rem($2) rem($3) rem($4);"]
+  },
+  "Внутренний нижний": {
+    "prefix": "ppb",
+    "body": ["padding: 0 0 rem($1) 0;"]
+  },
+  "Внутренний верхний": {
+    "prefix": "ppt",
+    "body": ["padding: rem($1) 0 0 0;"]
+  },
+  "Внутренний левый": {
+    "prefix": "ppl",
+    "body": ["padding: 0 0 0 rem($1);"]
+  },
+  "Внутренний правый": {
+    "prefix": "ppr",
+    "body": ["padding: 0 rem($1) 0 0;"]
+  },
+  "Анимация transition": {
+    "prefix": "ttr",
+    "body": ["transition: $1 0.32$2s ease-in-out;$4"]
+  },
+  "Центральный марджин": {
+    "prefix": "moa",
+    "body": ["margin: 0 auto;"]
+  },
+  "Медиа-запрос на максимальную ширину": {
+    "prefix": "mdma",
+    "body": ["@media(max-width: $1) {$2}"]
+  },
+  "Медиа-запрос на минимульную ширину": {
+    "prefix": "mdmi",
+    "body": ["@media(min-width: $1) {$2}"]
+  },
+  "Флекс выравнивание": {
+    "prefix": "flc",
+    "body": ["display: flex;", "align-items: center;", "justify-content: center;"]
+  },
+  "css vars": {
+    "prefix": "v",
+    "body": ["var(--$1)$2"],
+    "description": "CSS переменные в стилях"
+  },
+  "Position: fixed": {
+    "prefix": "fs",
+    "body": ["position: fixed;\nz-index: 20;\ntop: 0;\nleft: 0;\nwidth: 100%;\nheight: 100%;"],
+    "description": "Абсолютное меню"
+  },
+  "Медиа - max": {
+    "prefix": "mx",
+    "body": ["@media(max-width: em($1)) {$2", "}"]
+  },
+  "Медиа - min": {
+    "prefix": "mn",
+    "body": ["@media(min-width: em($1)) {$2", "}"]
+  },
+  "ps": {
+    "prefix": "ps",
+    "body": ["position: absolute;", "width: 100%;", "height: 100%;", "top: 0;", "left: 0;"],
+    "description": "position absolute"
+  },
+}

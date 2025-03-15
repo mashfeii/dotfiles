@@ -1,0 +1,83 @@
+
+# Monitor on which the notification center will be printed.
+monitor: 0
+
+notification-center:
+  # Margin at the top of the notification center in pixels. This can be
+  # used to avoid overlap between the notification center and bars such
+  # as polybar or i3blocks.
+  marginTop: 0
+
+  # Margin at the bottom of the notification center in pixels.
+  marginBottom: 30
+
+  # Margin to the right of the notification center in pixels.
+  marginRight: 0
+
+  # Width of the notification center in pixels.
+  width: 350
+  # (Optional) Command to run at startup.  This can be used to setup
+  # button states.
+  # startupCommand : "deadd-notification-center-startup"
+
+  # If newFirst is set to true, newest notifications appear on the top
+  # of the notification center. Else, notifications stack, from top to
+  # bottom.
+  new-first: true
+
+  # If true, the transient field in notifications will be ignored and
+  # the notification will be persisted in the notifiction center anyways
+  ignore-transient: false
+
+notifications:
+  # If true, markup (<u>, <i>, <b>, <a>) will be displayed properly
+  use-markup: true
+
+  app-icon:
+    # If set to true: If no icon is passed by the app_icon parameter
+    # and no application "desktop-entry"-hint is present, the notification
+    # center will try to guess the icon from the application name (if present).
+    # Default is true.
+    guess-icon-from-name: true
+
+    # The display size of the application icons in the notification
+    # pop-ups and in the notification center
+    icon-size: 20
+
+  dbus:
+    ### If noti-closed messages are enabled, the sending application
+    ### will know that a notification was closed/timed out. This can
+    ### be an issue for certain applications, that overwrite
+    ### notifications on status updates (e.g. Spotify on each
+    ### song). When one of these applications thinks, the notification
+    ### has been closed/timed out, they will not overwrite existing
+    ### notifications but send new ones. This can lead to redundant
+    ### notifications in the notification center, as the close-message
+    ### is send regardless of the notification being persisted.
+    send-noti-closed: false
+
+  popup:
+    ### Default timeout used for notifications in milli-seconds.  This can
+    ### be overwritten with the "-t" option (or "--expire-time") of the
+    ### notify-send command.
+    default-timeout: 10000
+    # Margin above notifications (in pixels). This can be used to avoid
+    # overlap between notifications and a bar such as polybar or i3blocks.
+    margin-top: 52
+
+    # Margin on the right of the notification (in pixels).
+    margin-right: 20
+
+    # Vertical distance between 2 notifications (in pixels).
+    margin-between: 20
+
+    # Width of the notifications.
+    width: 330
+
+    # Monitor on which the notification will be printed.
+    monitor: 0
+
+  image:
+    # The maximal display size of images that are part of notifications
+    # for notification pop-ups and in the notification center
+    size: 100

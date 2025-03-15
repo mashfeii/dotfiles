@@ -1,0 +1,159 @@
+{
+  "adaptive value": {
+    "prefix": "adpt",
+    "body": ["@include adaptiveValue(\"$1\", $2, $3);"]
+  },
+  "lc": {
+    "prefix": "lc",
+    "body": ["&:last-child {\n\t$0\n}"],
+    "description": "lc"
+  },
+  "fc": {
+    "prefix": "fc",
+    "body": ["&:first-child {\n\t$0\n}"],
+    "description": "fc"
+  },
+  "nc": {
+    "prefix": "nc",
+    "body": ["&:nth-child($1) {\n\t$2\n}"],
+    "description": "nc"
+  },
+  "BeforeAfter": {
+    "prefix": "ba",
+    "body": ["&::before,&::after {\n\tcontent: '';\n\t$0\n}"],
+    "description": "ba"
+  },
+  "After": {
+    "prefix": "a",
+    "body": ["&::after {\n\tcontent: \"\";\n\t$0\n}"],
+    "description": "after"
+  },
+  "Before": {
+    "prefix": "b",
+    "body": ["&::before {\n\tcontent: \"\";\n\t$0\n}"],
+    "description": "before"
+  },
+  "hv": {
+    "prefix": "hv",
+    "body": ["&:hover {\n\t$0\n}"],
+    "description": "hv"
+  },
+  "hhv": {
+    "prefix": "hhv",
+    "body": ["@media(any-hover: hover) {\n\t&:hover {\n\t\t$0\n\t}\n}"],
+    "description": "hhv"
+  },
+  "Медиа - max(десктопы)": {
+    "prefix": "mxd",
+    "body": ["@media(max-width: \\$pc) {$1", "}"]
+  },
+  "Медиа - min(десктопы)": {
+    "prefix": "mnd",
+    "body": ["@media(min-width: \\$pc) {$1", "}"]
+  },
+  "Медиа - max(ноутбуки-xl)": {
+    "prefix": "mxnxl",
+    "body": ["//== 1440px ==//\n@media(max-width: \\$note-xl) {$1", "}"]
+  },
+  "Медиа - min(ноутбуки-xl)": {
+    "prefix": "mnnxl",
+    "body": ["//== 1440px ==//\n@media(min-width: \\$note-xl) {$1", "}"]
+  },
+  "Медиа - max(ноутбуки-l)": {
+    "prefix": "mxnl",
+    "body": ["//== 1360px ==//\n@media(max-width: \\$note-l) {$1", "}"]
+  },
+  "Медиа - min(ноутбуки-l)": {
+    "prefix": "mnnl",
+    "body": ["//== 1360px ==//\n@media(min-width: \\$note-l) {$1", "}"]
+  },
+  "Медиа - max(ноутбуки-m)": {
+    "prefix": "mxnm",
+    "body": ["//== 1200px ==//\n@media(max-width: \\$note-m) {$1", "}"]
+  },
+  "Медиа - min(ноутбуки-m)": {
+    "prefix": "mnnm",
+    "body": ["//== 1200px ==//\n@media(min-width: \\$note-m) {$1", "}"]
+  },
+  "Медиа - max(ноутбуки-s)": {
+    "prefix": "mxns",
+    "body": ["//== 1024px ==//\n@media(max-width: \\$note-s) {$1", "}"]
+  },
+  "Медиа - min(ноутбуки-s)": {
+    "prefix": "mnns",
+    "body": ["//== 1024px ==//\n@media(min-width: \\$note-s) {$1", "}"]
+  },
+  "Медиа - max(планшеты)": {
+    "prefix": "mxt",
+    "body": ["//== 992px ==//\n@media(max-width: \\$tb) {$1", "}"]
+  },
+  "Медиа - min(планшеты)": {
+    "prefix": "mnt",
+    "body": ["//== 992px ==//\n@media(min-width: \\$tb) {$1", "}"]
+  },
+  "Медиа - max(планшеты-s)": {
+    "prefix": "mxts",
+    "body": ["//== 870px ==//\n@media(max-width: \\$tb-s) {$1", "}"]
+  },
+  "Медиа - min(планшеты-s)": {
+    "prefix": "mnts",
+    "body": ["//== 870px ==//\n@media(min-width: \\$tb-s) {$1", "}"]
+  },
+  "Медиа - max(телефоны)": {
+    "prefix": "mxp",
+    "body": ["//== 768px ==//\n@media(max-width: \\$mb) {$1", "}"]
+  },
+  "Медиа - min(телефоны)": {
+    "prefix": "mnp",
+    "body": ["//== 768px ==//\n@media(min-width: \\$mb) {$1", "}"]
+  },
+  "Медиа - max(маленькие телефоны)": {
+    "prefix": "mxps",
+    "body": ["//== 440px ==//\n@media(max-width: \\$mb-s) {$1", "}"]
+  },
+  "Медиа - min(маленькие телефоны)": {
+    "prefix": "mnpc",
+    "body": ["@media(min-width: \\$pc) {$1", "}"]
+  },
+  "Медиа - max(декстопы)": {
+    "prefix": "mxpm",
+    "body": ["//== 576px ==//\n@media(max-width: \\$mb-m) {$1", "}"]
+  },
+  "Медиа - min(576)": {
+    "prefix": "mnpm",
+    "body": ["//== 576px ==//\n@media(min-width: \\$mb-m) {$1", "}"]
+  },
+  "Медиа - max(380)": {
+    "prefix": "mxpmin",
+    "body": ["//== 370px ==//\n@media(max-width: \\$mb-xs) {$1", "}"]
+  },
+  "Медиа - min(380)": {
+    "prefix": "mnpmin",
+    "body": ["//== 370px ==//\n@media(min-width: \\$mb-xs) {$1", "}"]
+  },
+  "Margin Bottom not last-child": {
+    "prefix": "mbl",
+    "body": ["&:not(:last-child) {margin-bottom: rem($0);}"],
+    "description": "Добавляет нижний отступ исключая последний объект"
+  },
+  "Margin Bottom not last-child with EM": {
+    "prefix": "mble",
+    "body": ["&:not(:last-child) {margin-bottom: em($1, $2);}"],
+    "description": "Добавляет нижний отступ исключая последний объект c переводом в EM"
+  },
+  "Not last-child": {
+    "prefix": "nlc",
+    "body": ["&:not(:last-child) {\n\t$1\n}"],
+    "description": "Исключая последний объект"
+  },
+  "Not first-child": {
+    "prefix": "nfc",
+    "body": ["&:not(:first-child) {\n\t$1\n}"],
+    "description": "Исключая последний объект"
+  },
+  "extends": {
+    "prefix": "ex",
+    "body": ["@extend %$1"],
+    "description": "Шаблоны/заготовки стилей"
+  }
+}

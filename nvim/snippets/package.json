@@ -1,0 +1,66 @@
+{
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "plaintext",
+          "markdown",
+          "tex",
+          "html",
+          "global",
+          "all"
+        ],
+        "path": "./global.json"
+      },
+      {
+        "language": "go",
+        "path": "./go.json"
+      },
+      {
+        "language": [
+          "scss",
+          "css"
+        ],
+        "path": "./scss.json"
+      },
+      {
+        "language": [
+          "markdown",
+          "tex"
+        ],
+        "path": "./notes.json"
+      },
+      {
+        "language": [
+          "tex"
+        ],
+        "path": "./latex.json"
+      },
+      {
+        "language": [
+          "javascript",
+          "typescript"
+        ],
+        "path": "./javascript.json"
+      },
+      {
+        "language": [
+          "html"
+        ],
+        "path": "./html.json"
+      },
+      {
+        "language": "php",
+        "path": "./php.json"
+      },
+      {
+        "language": [
+          "css",
+          "scss",
+          "jsx"
+        ],
+        "path": "./css.json"
+      }
+    ]
+  }
+}

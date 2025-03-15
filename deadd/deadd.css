@@ -1,0 +1,132 @@
+/* Notification center */
+.deadd-noti-center {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+.noti-center.time {
+  font-size: 42px;
+}
+
+.noti-center.date {
+  font-size: 18px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.appname {
+  font-size: 12px;
+}
+
+.time {
+  font-size: 12px;
+}
+
+.blurredBG,
+#main_window,
+.blurredBG.low,
+.blurredBG.normal {
+  background: rgba(50, 48, 47, 0.65);
+}
+
+.blurredBG.notification {
+  background: rgba(50, 48, 47, 0.65);
+}
+
+.blurredBG.notification.critical {
+  background: rgba(234, 105, 98, 0.65);
+}
+
+.notificationInCenter.critical {
+  background: rgba(234, 105, 98, 0.65);
+}
+
+/* Labels */
+
+label {
+  color: #dfbf8e;
+}
+
+label.notification {
+  color: #dcdcdc;
+}
+
+label.critical {
+  color: #fff;
+}
+.notificationInCenter label.critical {
+  color: #fff;
+}
+
+/* Buttons */
+
+button {
+  background: transparent;
+  color: #212121;
+  border-radius: 3px;
+  border-width: 0px;
+  background-position: 0px 0px;
+  text-shadow: none;
+}
+
+button:hover {
+  border-radius: 3px;
+  background: rgba(57, 57, 57, 0.65);
+  border-width: 0px;
+  border-top: transparent;
+  border-color: #f00;
+  color: #fee;
+}
+
+/* Custom Buttons */
+
+.userbutton {
+  background: rgba(20, 0, 0, 0.15);
+}
+
+.userbuttonlabel {
+  color: #212121;
+  font-size: 12px;
+}
+
+.userbutton:hover {
+  background: rgba(57, 57, 57, 0.65);
+}
+
+.userbuttonlabel:hover {
+  color: #111;
+}
+
+button.buttonState1 {
+  background: rgba(20, 0, 0, 0.5);
+}
+
+.userbuttonlabel.buttonState1 {
+  color: #212121;
+}
+
+button.buttonState1:hover {
+  background: rgba(20, 0, 0, 0.4);
+}
+
+.userbuttonlabel.buttonState1:hover {
+  color: #111;
+}
+
+button.buttonState2 {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.userbuttonlabel.buttonState2 {
+  color: #111;
+}
+
+button.buttonState2:hover {
+  background: rgba(20, 0, 0, 0.3);
+}
+
+.userbuttonlabel.buttonState2:hover {
+  color: #000;
+}

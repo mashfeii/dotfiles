@@ -1,0 +1,152 @@
+{
+  "sprite": {
+    "prefix": "sp",
+    "body": ["<svg>\n\t<use xlink:href=\"@img/icons/icons.svg#$1\" />\n</svg>$2"]
+  },
+  "picture": {
+    "prefix": "pic",
+    "body": [
+      "<picture>\n\t<source src=\"@img/$1\">\n\t<img src=\"@img/$1\" width=\"$2\" height=\"$3\" alt=\"$4\">\n</picture>"
+    ],
+    "description": "ba"
+  },
+  "Swiper": {
+    "prefix": "swiper",
+    "body": [
+      "<div class=\"${1:имя-блока}__slider swiper\">\n\t<div class=\"${1:имя-блока}__wrapper swiper-wrapper\">\n\t\t<div class=\"${1:имя-блока}__slide swiper-slide\"></div>\n\t</div>\n</div>"
+    ],
+    "description": "Добавляет базовый HTML код слайдера Swiper"
+  },
+  "Add image IBG": {
+    "prefix": "ibg",
+    "body": ["<div class=\"${1:имя блока}__image-ibg\"><img src=\"@img$2\" alt=\"\"></div>"],
+    "description": "Добавляет объект с картинкой и классом IBG"
+  },
+  "Add Link with image IBG": {
+    "prefix": "ibga",
+    "body": ["<a href=\"\" class=\"${1:имя блока}__image-ibg\"><img data-src=\"@img$2\" alt=\"\"></a>"],
+    "description": "Добавляет ссылку с картинкой и классом IBG"
+  },
+  "Add input tag": {
+    "prefix": "inp",
+    "body": "<input autocomplete=\"off\" type=\"text\" name=\"form[]\" data-error=\"Ошибка\" placeholder=\"\" class=\"input\">",
+    "description": "Добавляет input со настройками"
+  },
+  "Textarea": {
+    "prefix": "txta",
+    "body": "<textarea autocomplete=\"off\" name=\"form[]\" placeholder=\"$1\" data-error=\"Ошибка\" class=\"input\"></textarea>",
+    "description": "txta"
+  },
+  "Swiper Full": {
+    "prefix": "swiperfull",
+    "body": [
+      "<div class=\"${1:имя-блока}__slider swiper\">\n\t\n\t<div class=\"${1:имя-блока}__wrapper swiper-wrapper\">\n\t\t\n\t\t<div class=\"${1:имя-блока}__slide swiper-slide\"></div>\n\t</div>\n\t<!-- Если нужна пагинация -->\n\t<div class=\"swiper-pagination\"></div>\n\t<!-- Если нужна навигация (влево/вправо) -->\n\t<button type=\"button\" class=\"swiper-button-prev\"></button>\n\t<button type=\"button\" class=\"swiper-button-next\"></button>\n\t<!-- Если нужен скролбар -->\n\t<div class=\"swiper-scrollbar\"></div>\n</div>"
+    ],
+    "description": "Добавляет базовый HTML код слайдера Swiper"
+  },
+  "Add tooltip": {
+    "prefix": "tip",
+    "body": ["data-tippy-content=\"Подсказка\""],
+    "description": "Добавляет текст-подсказку (Tippy)"
+  },
+  "Rating": {
+    "prefix": "rating",
+    "body": [
+      "<div class=\"rating rating_set\">\n\t<div class=\"rating__body\">\n\t\t<div class=\"rating__active\"></div>\n\t\t<div class=\"rating__items\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"1\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"2\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"3\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"4\" name=\"rating\">\n\t\t\t<input type=\"radio\" class=\"rating__item\" value=\"5\" name=\"rating\">\n\t\t</div>\n\t</div>\n\t<div class=\"rating__value\">3.6</div>\n</div>"
+    ],
+    "description": "Добавляет базовый HTML код рейтинга"
+  },
+  "Select": {
+    "prefix": "sel",
+    "body": "<select name=\"form[]\" class=\"form\">\n\t<option value=\"1\" selected>Пункт №1</option>\n\t<option value=\"2\">Пункт №2</option>\n\t<option value=\"3\">Пункт №3</option>\n\t<option value=\"4\">Пункт №4</option>\n</select>",
+    "description": "sel"
+  },
+  "Button": {
+    "prefix": "btn",
+    "body": "<button type=\"submit\" class=\"button\">${1:Отправить}</button>",
+    "description": ""
+  },
+  "Button Item": {
+    "prefix": "btni",
+    "body": "<button type=\"button\" class=\"${1:class}\">${2:Текст}</button>",
+    "description": ""
+  },
+  "Button Link": {
+    "prefix": "btnl",
+    "body": "<a href=\"\" class=\"button\">${1:Текст}</a>",
+    "description": ""
+  },
+  "CheckBox": {
+    "prefix": "chek",
+    "body": "<div class=\"checkbox\">\n\t<input id=\"c_1\" data-error=\"Ошибка\" class=\"checkbox__input\" type=\"checkbox\" value=\"1\" name=\"form[]\">\n\t<label for=\"c_1\" class=\"checkbox__label\"><span class=\"checkbox__text\">${1:Текст}</span></label>\n</div>",
+    "description": ""
+  },
+  "Add data-popup": {
+    "prefix": "pl",
+    "body": ["data-popup=\"$1\""],
+    "description": "Добавляет трибут для открытия попапа"
+  },
+  "Меню": {
+    "prefix": "menul",
+    "body": "<ul class=\"${1:название-блока}__list\">\n\t<li class=\"${1:название-блока}__item\">\n\t\t<a href=\"\" class=\"${1:название-блока}__link\">$2</a>\n\t</li>\n</ul>"
+  },
+  "Создание контейнера": {
+    "prefix": "cnt",
+    "body": ["<div class=\"$1__container container\">$2</div>"]
+  },
+  "qa": {
+    "prefix": "qa",
+    "body": "<div class=\"quantity\">\n\t<div class=\"quantity__button quantity__button_plus _icon-plus\"></div>\n\t<div class=\"quantity__input\">\n\t\t<input autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<div class=\"quantity__button quantity__button_minus _icon-minus\"></div>\n</div>",
+    "description": "qa"
+  },
+  "Tabs": {
+    "prefix": "tabs",
+    "body": [
+      "<div data-tabs class=\"${1:tabs}\">\n\t<nav data-tabs-titles class=\"${1:tabs}__navigation\">\n\t\t<button type=\"button\" class=\"${1:tabs}__title _tab-active\">Таб №1</button>\n\t\t<button type=\"button\" class=\"${1:tabs}__title\">Таб №2</button>\n\t\t<button type=\"button\" class=\"${1:tabs}__title\">Таб №3</button>\n\t</nav>\n\t<div data-tabs-body class=\"${1:tabs}__content\">\n\t\t<div class=\"${1:tabs}__body\">\n\t\t\tСодержимое первого таба\n\t\t</div>\n\t\t<div class=\"${1:tabs}__body\">\n\t\t\tСодержимое второго таба\n\t\t</div>\n\t\t<div class=\"${1:tabs}__body\">\n\t\t\tСодержимое третьего таба\n\t\t</div>\n\t</div>\n</div>"
+    ],
+    "description": "Добавляет базовый HTML код табов"
+  },
+  "Radio buttons": {
+    "prefix": "opt",
+    "body": "<div class=\"options\">\n\t<div class=\"options__item\">\n\t\t<input hidden id=\"o_1\" class=\"options__input\" checked type=\"radio\" value=\"1\" name=\"option\">\n\t\t<label for=\"o_1\" class=\"options__label\"><span class=\"options__text\">${1:Текст}</span></label>\n\t</div>\n\t<div class=\"options__item\">\n\t\t<input hidden id=\"o_2\" class=\"options__input\" type=\"radio\" value=\"2\" name=\"option\">\n\t\t<label for=\"o_2\" class=\"options__label\"><span class=\"options__text\">${2:Текст}</span></label>\n\t</div>\n</div>",
+    "description": ""
+  },
+  "Меню-бургер": {
+    "prefix": "menu",
+    "body": [
+      "<div class=\"header__menu menu\">",
+      "   <button type=\"button\" class=\"menu__icon icon-menu\"><span></span></button>",
+      "   <nav class=\"menu__body\">",
+      "      <ul class=\"menu__list\">",
+      "         <li class=\"menu__item\"><a href=\"\" class=\"menu__link\"></a></li>",
+      "      </ul>",
+      "   </nav>",
+      "</div>"
+    ]
+  },
+  "Спойлер": {
+    "prefix": "spoller",
+    "body": [
+      "<div data-spollers class=\"spollers\">",
+      "   <div class=\"spollers__item\">",
+      "      <button type=\"button\" data-spoller class=\"spollers__title\">$1Заголовок спойлера</button>",
+      "      <div class=\"spollers__body\">$2Контент спойлера</div>",
+      "   </div>",
+      "</div>"
+    ]
+  },
+  "Модальное окно": {
+    "prefix": "popup",
+    "body": [
+      "<div id=\"$1popup\" aria-hidden=\"true\" class=\"popup\">",
+      "   <div class=\"popup__body\">",
+      "      <div class=\"popup__content\">",
+      "         <a href=\"#\" class=\"popup__close close-popup\"><img src=\"img/icons/cross.svg\" alt=\"Закрыть модальное окно\"></a>",
+      "         <div class=\"popup__text\">$2",
+      "         </div>",
+      "      </div>",
+      "   </div>",
+      "</div>"
+    ]
+  }
+}
